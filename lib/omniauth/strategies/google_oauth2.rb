@@ -41,7 +41,7 @@ module OmniAuth
         end
       end
 
-      uid { raw_info['sub'] }
+      uid { raw_info['email'] }
 
       info do
         prune!(
